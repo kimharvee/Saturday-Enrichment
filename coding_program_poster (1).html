@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saturday Coding Enrichment Program</title>
+    <title>Saturday Coding Enrichment Program - Beaconhouse Yamsaard Ladprao</title>
     <style>
         * {
             margin: 0;
@@ -213,23 +213,6 @@
             margin-bottom: 15px;
         }
         
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-top: 15px;
-            transition: transform 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
-        
         .benefits {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -258,6 +241,23 @@
             color: #c53030;
             font-size: 1.3em;
             margin-bottom: 10px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .poster {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: none;
+            }
+            
+            .header::before {
+                animation: none;
+            }
         }
         
         @media (max-width: 600px) {
